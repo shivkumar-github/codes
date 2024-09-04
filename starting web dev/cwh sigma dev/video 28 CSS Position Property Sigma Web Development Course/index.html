@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--by default Position is static which prevents top and all (jo jaise hai vaise dikhenge)-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--This sets the initial width of the viewport to the device width, and it sets the initial scale to 1.0, ensuring that the webpage is not zoomed in or out by default.-->
+	<title>CSS Position</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		/* giving margin and padding 0 so that browser's default margin and padding must not get applied*/
+		.box {
+			height: 433px;
+			/*height is neccessary when we want to see the border of box when no text is typed in the div*/
+			width: 80vw;
+			/*80% of width of screen*/
+			padding: 3px;
+			margin: 3px;
+			/*this margin and padding will be applied in all four directions;*/
+			border: 2px solid black;
+		}
+
+		.box1 {
+			background-color: aqua;
+			/* position: absolute;
+			top: 8px;
+			left: 144px; */
+			position: sticky;
+			/*jab -tak istak scroll(that's why different than scroll(fixed mein hamesha chika hua hota hai)) nahi karte tabtak static nahi hogi*/
+			top: 0px;
+			height: 111px;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			/*nearest positioned(having position other than static) ancestor(ancestors of box1 are parent->body->html(html ke uper koi nahi to iske relative lag jayega))*/
+		}
+
+		.box2 {
+			background-color: azure;
+			/* position: relative;
+			top: 34px;
+			left: 56px; */
+			/*
+			top->> moves to top
+			similar for bottom, left, right 
+			and also 1 property z-index
+			we should write either top or bottom
+			also either left or rigth
+			*/
+		}
+
+		.box3 {
+			background-color: antiquewhite;
+			/* position: fixed;
+			bottom: 0px;
+			left: 25vw; */
+		}
+
+		.box4 {
+			background-color: purple;
+		}
+
+		.parent {
+			/* Exception : transform , filter, or perspective properties can also make an element appear as positioned*/
+			/* transform: translate(0); */
+			filter: invert(0);
+			padding: 43px;
+			margin: 34px;
+			border: 3px solid purple;
+			/* position: absolute; */
+			/*ab box1 parent ke raltive chalega*/
+		}
+		/* my understanding
+		fixed - fixed on the screen viewport 
+		absolute->> want to place the element at an exact position ->> fixed on webpage
+		relative - relative to where normally it should have been placed
+		*/
+	</style>
+</head>
+
+<body>
+	<div class="parent">
+		<div class="box box1"></div><!--this (spacing between two names) gives two class names-->
+		<div class="box box2"></div>
+		<div class="box box3"></div>
+		<div class="box box4"></div>
+	</div>
+</body>
+
+</html>

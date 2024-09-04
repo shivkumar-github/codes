@@ -1,0 +1,9 @@
+You raise a valid point. In the context of array rotation,
+when we talk about "rotating an array at position 0," 
+it essentially means shifting the elements to the left by a certain number of positions. 
+ 
+If the rotation count is 0, then the array remains unchanged.
+
+In general, the term "rotation" is used more broadly to describe a circular shifting of elements within an array. 
+When we rotate an array to the left or right, elements move from one end of the array to the other,
+creating a circular effect.

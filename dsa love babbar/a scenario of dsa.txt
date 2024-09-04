@@ -1,0 +1,14 @@
+===> Notes :-
+
+	1. code with harry's handwritten notes 
+	2. coding ninjas websites
+
+===> TO DOs
+	search in sorted rotated array example
+	stable or unstable algorithm depends on a single equal to sign then how ?
+
+===> What we have accomplished
+	Lecture 23 all completed but revision and self practice required
+	Lecture 24 Basic maths for dsa ununderstood part
+	Lecture 44 Linked list it's type -Completed
+	

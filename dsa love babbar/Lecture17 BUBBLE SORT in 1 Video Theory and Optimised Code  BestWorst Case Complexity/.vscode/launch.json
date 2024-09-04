@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "g:/My Drive/shivkumar/coding/dsa love babbar/Lecture17 BUBBLE SORT in 1 Video [Theory + Optimised Code]  BestWorst Case Complexity",
+      "program": "g:/My Drive/shivkumar/coding/dsa love babbar/Lecture17 BUBBLE SORT in 1 Video [Theory + Optimised Code]  BestWorst Case Complexity/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

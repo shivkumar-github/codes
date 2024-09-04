@@ -1,0 +1,2 @@
+# Greedy is a technique of programming in which we choose the best solution available at that time (local level) like being greedy
+### Greedy algorithms are a type of algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most immediate benefit.

@@ -1,0 +1,2 @@
+keeping the javascript and css and html content increases code readability 
+helps with browser cache

@@ -1,0 +1,10 @@
+Why quick sort is prefered in arrays and merge sort in linked list?
+Merge Sort for Linked Lists:
+
+Efficient Splitting: Merge sort easily splits linked lists into two halves using the slow/fast pointer approach.
+Memory Efficiency: Merge sort works well with linked lists as it doesn't require random access, making it memory efficient.
+Quick Sort for Arrays:
+
+Cache Efficiency: Quick sort benefits from cache locality in arrays, as it accesses contiguous memory locations.
+In-place Sorting: Quick sort is in-place and doesn't require additional memory, making it suitable for arrays.
+https://www.geeksforgeeks.org/why-quick-sort-preferred-for-arrays-and-merge-sort-for-linked-lists/

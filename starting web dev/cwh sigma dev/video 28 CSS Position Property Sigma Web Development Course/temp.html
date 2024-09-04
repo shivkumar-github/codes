@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Css position</title>
+        <style>
+                .divs {
+                        height: 250px;
+                        width: 500px;
+                        margin: 20px;
+                        border: 2px solid black;
+                }
+
+                #parent{
+                        border: 3px solid black;
+                        margin: 100px;
+                }
+
+                #div1 {
+                        background-color: blue;
+                }
+                
+                #div2 {
+                        position: fixed;
+                        top: 2px;
+                        background-color: white;
+                }
+
+                #div3 {
+                        background-color: red;
+                }
+
+                #div4 {
+                        background-color: green;
+                }
+        </style>
+</head>
+
+<body>
+        <div class="parent">
+                <div class="divs" id="div1"></div>
+                <div class="divs" id="div2"></div>
+                <div class="divs" id="div3"></div>
+                <div class="divs" id="div4"></div>
+        </div>
+
+</body>
+
+</html>

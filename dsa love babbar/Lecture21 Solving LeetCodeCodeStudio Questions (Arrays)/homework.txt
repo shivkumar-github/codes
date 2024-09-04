@@ -1,0 +1,15 @@
+find time and space complexity of all three problems
+
+I. checkIfArraySortedRoteted
+    -> time complexity = O(n) as the number of comparisons increases linearly with the length of the input
+    -> space complexity = O(1) as we haven't created any extra data  structures whose size depends on length of the input 
+        we have only created some variables whose size is independent of length of input
+ 
+II. rotateForward
+    -> time complexity = O(n) as n-1 comparisons need to be done where n is length of input 
+    -> space complexity = O(n) as the vector temp is created whose size depends on the length of the input and the printing is of constant space complexityO(1) therefore overall space complexity is O(n)
+
+III. sumOfTwoArrays
+    -> time complexity = O(max(n,m)) due to first while loop 
+       the time complexities of reverse function and other while loops will be less than O(max(m,n))
+    -> space complexity = O(max(n,m)+1)-> in the worst case when sizes of both arrays is equal and all are 9s = O(max(m,n))

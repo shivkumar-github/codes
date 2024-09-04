@@ -1,0 +1,2 @@
+git hub shows green sign when there are no controversial statements
+== pull ->> github se local

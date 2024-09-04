@@ -1,0 +1,12 @@
+why we write data_type* ptr = &value and not 
+    pointer ptr = &value
+    ->> It tell us what type of data is and as we know what type of data is we can decide how much memory we need to allocate/reserve 
+    ->> for example when we multiply *(pt1) * *(ptr2) if we know that pointers are pointing integer then we will reserve 4 byte memory for the answer
+
+
+Storing in symbol table
+    ->> for example int* ptr = &i;
+    then in symbol table 
+    ->>> i --> 710
+    ->>> ptr --> 810 
+    i variable 710 number location pe he aur i ka pointer 810 pe

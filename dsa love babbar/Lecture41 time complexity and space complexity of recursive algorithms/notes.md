@@ -1,0 +1,2 @@
+### Time complexity can be told but space taken by a program varies at every instant hence the space complexity is take as the maximum space required by program at any instant of time
+ ### for example in a recursive way of calulating factorial each recursive call uses come constant space and such n recursive call are present at instant so the time complexity is O(n)

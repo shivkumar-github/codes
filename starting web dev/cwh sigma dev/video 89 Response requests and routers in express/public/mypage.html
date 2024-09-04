@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>testing post requestb</title>
+</head>
+
+<body>
+        <script>
+                async function testPost() {
+                        // let a = await fetch("/", { method: "POST" })
+                        let a = await fetch("/", { method: "PUT" })
+                        let b = await a.text();
+                        console.log(b);
+                }
+                testPost();
+                // so in short we are taking response from server with fetch with data (url = "/" and request type = post) where code in main.js acting as server send the response text as hello world post which is nothing but a.text()
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shivkumar's page</title>
+  </head>
+  <body>
+    <h1>Form to apply for TA for sigma web dev TA</h1>
+    <!-- get request is a simple request we will learn further about get and post-->
+    <form action="post">
+      <div>
+        <label for="username">Enter your user name</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          autofocus
+        /><!--automatically focuses on this when webpage is reloaded-->
+        <!-- id is an unique identifier-->
+      </div>
+      <div>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input
+          type="radio"
+          name="gender"
+          id="female"
+          value="female"
+        /><!--type tells the type of the input and if name is equal then only one of them will be selected-->
+        <label for="female">Female</label
+        ><!--for assigns the text in label with the id in it , if id not written properly it will not get selected when clicked(try on clicking Female word after manipulating id)-->
+        <!-- we use label tag because it is linked with that id and when we click on label it directs cursor to that input field-->
+      </div>
+      <div>
+        <!-- we can use input type check box to get multiple options-->
+        <input type="checkbox" name="subscribe" value="yes" />
+        <label for="subscribe">subscribe to my newsletter</label>
+      </div>
+      <div>
+        <!-- text area only works for text input and we can also set its height and width-->
+        <label for="comment">Enter your comment</label>
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="Enter your comment here"
+        ></textarea>
+      </div>
+      <div>
+        <select name="fruits" id="fruits">
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="cherry">cherry</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>
