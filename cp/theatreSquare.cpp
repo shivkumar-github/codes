@@ -6,8 +6,8 @@ int main() {
     
     lli n,m,a;
     cin >> n >> m >> a;
-    n = n/a + (n%a != 0);
-    m = m/a + (m%a != 0);
+    n = n/a + (n%a != 0); // ceil value
+    m = m/a + (m%a != 0); // ceil value
     cout << m*n << endl;
     return 0;
 }
