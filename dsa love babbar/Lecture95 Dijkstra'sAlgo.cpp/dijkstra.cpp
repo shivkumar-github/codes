@@ -1,5 +1,8 @@
 /*
 dijkstra is nothing but calculating distance of all nodes from a single source node as we have done in lecture 93, just the difference is the weight of eadges is not 1 hence we have to select node with minimum edges using set in this algo
+Note - the dijkstra's algorithm doesn't works on the graph with negative edges - suppose we have two nodes 0 and 1 with edge -2 then dist[0] = 0 and dist[1] = -2 and at node 2 we will again see that dist[1] + adjList[1][0] = -4 < 0 and in this way it will go on infinitely updating more negative distance as smallest.
+for detailed - https://youtu.be/V6H1qAeB-l4?feature=shared at 18:13
+
 */
 
 #include <bits/stdc++.h>
