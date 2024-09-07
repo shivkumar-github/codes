@@ -15,3 +15,5 @@
 
 ### 6. If you need to traverse an array twice or more or need to rotate etc (anything other than normal traversal)
 ### consider using modulo operator with iterator so to convert iterator to range
+
+### 7. While solving any problem approach and working is more important than the implementation. Hence focus remembering approach and reason behind it, not the code.
