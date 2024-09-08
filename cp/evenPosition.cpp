@@ -23,7 +23,7 @@ int main()
 				st.pop();
 			}
 			else
-					st.push(i);
+				st.push(i);
 		}
 		cout << cost << endl;
 	}
