@@ -8,7 +8,7 @@ aligning the elements in heap in increasing order
 
 #include <iostream>
 using namespace std;
-
+// following 1 based indexing
 void heapify(int arr[], int size, int i)
 {
     int largest = i;
@@ -39,14 +39,15 @@ void heapSort(int arr[], int size)
         // step 2
         heapify(arr, size, 1);
     }
-}
+} // Time Complexity - O(nlogn) (O(n) to build the max heap from the given array and each of n-1 calls to heapify take log n time)
+// Space Complexity - O(1) constant extra space
 
 int main()
 {
-
+    // following 1 based indexing
     int arr[6] = {-1, 54, 53, 55, 52, 50};
     int size = 5;
-    // heap creation
+    // heap creation starting from first non leaf node to the root node(nodes from size/2 + 1 to size are already max heap as they are leaf node)
     for (int i = size / 2; i > 0; i--)
     {
         heapify(arr, size, i);

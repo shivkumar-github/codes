@@ -33,21 +33,15 @@ void InsertionSort(vector<int> &array)
 {
     for (int i = 1; i < array.size(); i++)
     {
-        int temp = array[i];
+        int key = array[i];
         int j = i - 1;
-        for (; j >= 0; j--)
+        while (j >= 0 && array[j] > key)
         {
-            if (array[j] > temp)
-            {
-                // shift the part of array before the element till it's position and then place the element stored in temp at the position
-                array[j + 1] = array[j];
-            }
-            else
-            {          // ruk jao
-                break; // yaha pe break ho raha hai yani j-- (updation nahi hogi)
-            }
+            // shift the part of array before the element till it's position and then place the element stored in temp at the position
+            array[j + 1] = array[j];
+            j--;
         }
-        array[j + 1] = temp;
+        array[j + 1] = key;
     }
 }
 
