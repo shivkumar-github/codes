@@ -4,14 +4,12 @@
 using namespace std;
 
 // preparing adjcency list for a directed graph
-
 void prepareAdjList(vector<vector<int>>& adjList, vector<vector<int>>& edges){
     for(int i = 0;i<edges.size();i++){
         adjList[edges[i][0]].push_back(edges[i][1]);
     }
 }
 
-// METHOD: 1 given by babbar ... a bit bigger code but neccessary when the graph is disconnected
 // bfs traversal
 void bfs(vector<vector<int>>& adjList, vector<bool>& visited, vector<int>& ans, int start){
     queue<int> q;
@@ -43,6 +41,8 @@ vector<int> bfsTraversal(int n, vector<vector<int>>& edges, int root=0){
     }
     return ans;
 }
+// time Complexity - O(E+V) - (the loop insider the main function will execute for V times and the for loop insider the utility function iterating over the adjacency list will executed for 2E times in total for undirected graph and E times for directed graph)
+// space complexity - O(E+V) - space for the adjacency list
 
 int  main(){
 
