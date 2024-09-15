@@ -15,19 +15,22 @@ public:
 		vector<bool> mst(V, false);
 		// we don't need to maintain parent while calulating only sum of edges but if asked to return the mst then we have to maintain the parent array also.
 		minHeap.push({0, 0});
-		while(!minHeap.empty())
+		while (!minHeap.empty())
 		{
 			int w = minHeap.top().first;
 			int u = minHeap.top().second;
 			minHeap.pop();
-			if(mst[u]) continue; // DOUBT: why continue and not
-// 			if(!mst[u]), see at end of the code(to avoid repeated pushing of nodes with same edges weight)
+			if (mst[u])
+				continue; // DOUBT: why continue and not
+						  // 			if(!mst[u]), see at end of the code(to avoid repeated pushing of nodes with same edges weight)
 			sum += w;
 			mst[u] = true;
-			for(auto it : adj[u]){
+			for (auto it : adj[u])
+			{
 				int neigh = it[0];
 				int neigh_weight = it[1];
-				if(!mst[neigh]){
+				if (!mst[neigh])
+				{
 					minHeap.push({neigh_weight, neigh});
 				}
 			}

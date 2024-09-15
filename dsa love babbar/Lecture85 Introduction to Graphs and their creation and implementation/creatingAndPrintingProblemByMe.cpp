@@ -30,7 +30,7 @@ vector<vector<int>> printAdjacency(int n, int m, vector<vector<int>> &edges)
         return ans;
 }
 // time complexities and space complexities of the codes
-// worst case time complexity will be O(max(n, m)) 
+// worst case time complexity will be O(max(n, m))
 // and space complexity same *O(n^2) actual*->> O(m*n) which in worst case will be n*n
 
 int main()

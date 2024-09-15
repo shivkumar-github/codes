@@ -6,7 +6,7 @@ coding ninjas - https://www.naukri.com/code360/problems/prim-s-mst_1095633
 #include <bits/stdc++.h>
 using namespace std;
 
-// METHOD: 1 : Using array(here named ke) to store weight of each edge and searching minimum element in that array (TC - O(V) for finding each minimum element)
+// METHOD: 1 : Using array(here named keY) to store weight of each edge and searching minimum element in that array (TC - O(V) for finding each minimum element)
 vector<pair<pair<int, int>, int>> calculatePrimsMST1(int n, int m, vector<pair<pair<int, int>, int>> &g)
 {
 	unordered_map<int, list<pair<int, int>>> adj;
@@ -114,7 +114,7 @@ vector<pair<pair<int, int>, int>> calculatePrimsMST(int n, int m, vector<pair<pa
 		{
 			int neighWeight = i.second;
 			int neighNode = i.first;
-			if (!mst[neighNode])
+			if (!mst[neighNode]) // here we are not checding for key[neighNode] < neighWeight as though those are added to minHeap but they will be skipped due to mst[crNode] condition at line 108
 			{
 				vector<int> t = {neighWeight, neighNode, crNode};
 				minHeap.push(t);
