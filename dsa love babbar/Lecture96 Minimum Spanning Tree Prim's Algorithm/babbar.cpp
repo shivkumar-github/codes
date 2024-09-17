@@ -75,7 +75,7 @@ vector<pair<pair<int, int>, int>> calculatePrimsMST(int n, int m, vector<pair<pa
 {
 	unordered_map<int, list<pair<int, int>>> adjList;
 	vector<pair<pair<int, int>, int>> result;
-	priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>>> minHeap;
+	priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>>> minHeap;// no need to create compare function as we are giving weight first in the vector
 	vector<bool> mst(n + 1);
 	vector<int> parent(n + 1); // to maintain the parent of every node
 	vector<int> key(n + 1);
@@ -114,7 +114,7 @@ vector<pair<pair<int, int>, int>> calculatePrimsMST(int n, int m, vector<pair<pa
 		{
 			int neighWeight = i.second;
 			int neighNode = i.first;
-			if (!mst[neighNode]) // here we are not checding for key[neighNode] < neighWeight as though those are added to minHeap but they will be skipped due to mst[crNode] condition at line 108
+			if (!mst[neighNode]) // here we are not checking for key[neighNode] < neighWeight as though those are added to minHeap but they will be skipped due to mst[crNode] condition at line 108
 			{
 				vector<int> t = {neighWeight, neighNode, crNode};
 				minHeap.push(t);
