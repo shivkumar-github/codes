@@ -1,6 +1,6 @@
 /*
 // approach for a single edge - https://www.geeksforgeeks.org/problems/bridge-edge-in-graph/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card
-// brute force
+// brute force - removing each edge one by one and then checking if the nodes are still reachable or not
 int isBridge(int V, vector<int> adj[], int c, int d)
 {
 	vector<int> cvec;
@@ -80,7 +80,7 @@ public:
 			}
 			else
 			{
-				// back edge
+				// back edge if the already visited and non parent node comes again
 				low[crnd] = min(low[crnd], discovered[nbr]);
 			}
 		}
