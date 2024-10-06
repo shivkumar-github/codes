@@ -38,7 +38,7 @@ public:
                 low[crnd] = min(low[crnd], disc[nbr]); // if we take low of nbr instead of disc then it will give wrong results as low might be a node where we can reach through the nbr so removing nbr will make the node unreachable but it will still show that the node is still reachable (look for example for better understanding.)
             }
         }
-        if (parent == -1 && child > 1)
+        if (parent == -1 && child > 1) // look image for explanation of this case
             ap[crnd] = true;
     }
 
