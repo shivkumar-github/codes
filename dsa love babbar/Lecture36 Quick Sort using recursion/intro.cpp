@@ -67,8 +67,8 @@ space complexity => O(n)
 int main()
 {
 
-        // int arr[] = {2, 4, 9, 9, 9, 1, 6 ,9, 9, 9};
-        int arr[] = {9, 4, 9, 2, 9, 1, 8, 9, 1};
+        // int arr[] = {2, 4, 9, 9, 9, 1, 6 ,9, 9, 9}; // -> expected output - 1 2 4 6 9 9 9 9 9 9 
+        int arr[] = {9, 4, 9, 2, 9, 1, 8, 9, 1}; // -> expected output - 1 1 2 4 8 9 9 9 9
         int n = sizeof(arr) / sizeof(arr[0]);
 
         quickSort(arr, 0, n - 1);
